@@ -19,6 +19,13 @@
 .txt-color{
     color: var(--primary-color);
 }
+.bg-color{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.bg-color:hover{
+    background-color: var(--primary-hover);
+}
 /* start of main container */
 
 .main-container {
@@ -174,6 +181,20 @@
     }
 }
 
+.cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-actions {
+    position: relative;
+}
 
 
 /* view by categories */
@@ -206,4 +227,17 @@
 .custom-next:hover {
     background: #ff6b6b;
     color: white;
+}
+
+
+
+/* loginn and signup */
+
+.sign-in-btn {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: var(--primary-hover);
 }

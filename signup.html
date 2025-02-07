@@ -3,27 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curuza</title>
+    <title>Curuza - Sign Up</title>
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <!-- slicks -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-
-    <!-- tailwind -->
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -32,7 +17,10 @@
   </head>
   <body class="bg-gray-100">
     <div class="absolute top-4 left-4">
-      <a href="index.html" class="flex items-center text-gray-600 hover:text-gray-900 transition-colors">
+      <a
+        href="index.html"
+        class="flex items-center text-gray-600 hover:text-gray-900 transition-colors"
+      >
         <i class="fas fa-arrow-left mr-2"></i>
         <span>Go back</span>
       </a>
@@ -40,11 +28,27 @@
     <div class="flex items-center justify-center min-h-screen">
       <div class="bg-white p-8 rounded-lg shadow-lg w-96">
         <div class="text-center mb-8">
-          <h2 class="text-3xl font-bold text-gray-800">Welcome Back</h2>
-          <p class="text-gray-600 mt-2">Please sign in to your account</p>
+          <h2 class="text-3xl font-bold text-gray-800">Create Account</h2>
+          <p class="text-gray-600 mt-2">Join our community today</p>
         </div>
 
         <form class="space-y-6">
+          <div>
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="name"
+            >
+              Full Name
+            </label>
+            <input
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+              type="text"
+              id="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
           <div>
             <label
               class="block text-gray-700 text-sm font-bold mb-2"
@@ -72,41 +76,56 @@
               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
               type="password"
               id="password"
-              placeholder="Enter your password"
+              placeholder="Create a password"
               required
             />
           </div>
 
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              <input
-                type="checkbox"
-                id="remember"
-                class="h-4 w-4 text-blue-600"
-              />
-              <label class="ml-2 text-sm text-gray-600" for="remember">
-                Remember me
-              </label>
-            </div>
-            <a href="#" class="text-sm text-blue-600 hover:underline">
-              Forgot password?
-            </a>
+          <div>
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="confirm-password"
+            >
+              Confirm Password
+            </label>
+            <input
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+              type="password"
+              id="confirm-password"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+
+          <div class="flex items-center">
+            <input
+              type="checkbox"
+              id="terms"
+              class="h-4 w-4 text-blue-600"
+              required
+            />
+            <label class="ml-2 text-sm text-gray-600" for="terms">
+              I agree to the Terms and Privacy Policy
+            </label>
           </div>
 
           <button
             type="submit"
             class="sign-in-btn w-full text-white py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
-            Sign In
+            Create Account
           </button>
         </form>
 
         <div class="mt-6 text-center">
           <p class="text-sm text-gray-600">
-            Don't have an account?
-            <a href="signup.html" class="text-blue-600 hover:underline">Sign up</a>
+            Already have an account?
+            <a href="login.html" class="text-blue-600 hover:underline"
+              >Sign in</a
+            >
           </p>
         </div>
       </div>
     </div>
-  </body></html>
+  </body>
+</html>

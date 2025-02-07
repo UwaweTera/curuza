@@ -3,6 +3,21 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
 });
 
+const cartIcon = document.querySelector('.fa-shopping-cart');
+const cartDropdown = document.querySelector('.cart-dropdown');
+
+cartIcon.addEventListener('click', () => {
+    cartDropdown.classList.toggle('hidden');
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    if (!cartIcon.contains(e.target) && !cartDropdown.contains(e.target)) {
+        cartDropdown.classList.add('hidden');
+    }
+});
+
+
 $(document).ready(function () {
   $(".hero-slider").slick({
     dots: true,

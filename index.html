@@ -38,9 +38,9 @@
         </div>
 
         <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#shop">Shop</a>
-          <a href="#orders">Orders</a>
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="orders.html">Orders</a>
           <a href="#contact">Contact</a>
         </div>
 
@@ -49,10 +49,39 @@
             <input type="text" placeholder="Search..." />
             <i class="fas fa-search"></i>
           </div>
-          <button class="join-btn">Join</button>
+          <button class="join-btn"><a href="signup.html">Join</a></button>
           <div class="icons">
             <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-heart"></i>
+            <a href="wishlist.html"><i class="fas fa-heart"></i></a> 
+
+            <div class="cart-dropdown hidden">
+              <div class="p-4">
+                  <h3 class="text-lg font-semibold mb-4">Shopping Cart</h3>
+                  <div class="cart-items space-y-4">
+                      <!-- Sample Cart Item -->
+                      <div class="flex items-center gap-4 border-b pb-4">
+                          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Product" class="w-16 h-16 object-cover rounded">
+                          <div class="flex-1">
+                              <h4 class="font-medium">Product Name</h4>
+                              <p class="text-gray-500">1 x RWF 15k</p>
+                          </div>
+                          <button class="text-red-500 hover:text-red-700">
+                              <i class="fas fa-trash"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="mt-4 pt-4 border-t">
+                      <div class="flex justify-between font-semibold mb-4">
+                          <span>Total:</span>
+                          <span>RWF 15k</span>
+                      </div>
+                      <button class="w-full bg-primary-color text-white py-2 rounded hover:bg-primary-hover">
+                          Checkout
+                      </button>
+                  </div>
+              </div>
+          </div>
+          
           </div>
         </div>
 
