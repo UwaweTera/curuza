@@ -98,118 +98,137 @@
     </div>
 
     <main class="main-container py-10">
-      <h1 class="text-3xl font-bold mb-8">My Orders</h1>
-
-      <!-- Order List -->
-      <div class="space-y-6">
-        <!-- Order Item 1 -->
-        <div class="border rounded-lg p-6 bg-white">
-          <div class="flex justify-between items-center mb-4">
-            <div>
-              <h3 class="font-semibold">Order #12345</h3>
-              <p class="text-gray-500">Placed on July 15, 2023</p>
-            </div>
-            <span class="px-4 py-1 bg-green-100 text-green-700 rounded-full"
-              >Delivered</span
-            >
-          </div>
-
-          <div class="flex gap-4 mb-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Product Images -->
+        <div class="space-y-4">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+            alt="Product"
+            class="w-full h-[500px] object-cover rounded-lg"
+          />
+          <div class="grid grid-cols-4 gap-4">
             <img
               src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
-              alt="Product"
-              class="w-24 h-24 object-cover rounded"
+              alt="Thumbnail"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
             />
-            <div>
-              <h4 class="font-medium">Nike Air Max</h4>
-              <p class="text-gray-500">Size: 42 | Color: Red</p>
-              <p class="text-primary-color font-bold">RWF 13k</p>
-            </div>
-          </div>
-
-          <div class="flex justify-between items-center pt-4 border-t">
-            <button class="text-primary-color hover:underline">
-              View Details
-            </button>
-            <button
-              class="px-4 py-2 border border-primary-color text-primary-color rounded hover:bg-primary-color hover:text-white"
-            >
-              Buy Again
-            </button>
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+              alt="Thumbnail"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+              alt="Thumbnail"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+              alt="Thumbnail"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
           </div>
         </div>
 
-        <!-- Order Item 2 -->
-        <div class="border rounded-lg p-6 bg-white">
-          <div class="flex justify-between items-center mb-4">
-            <div>
-              <h3 class="font-semibold">Order #12346</h3>
-              <p class="text-gray-500">Placed on July 10, 2023</p>
+        <!-- Product Info -->
+        <div class="space-y-6">
+          <div>
+            <h1 class="text-3xl font-bold mb-2">Nike Air Max</h1>
+            <p class="text-gray-500">Category: Sneakers</p>
+          </div>
+
+          <div>
+            <p class="text-2xl font-bold text-primary-color">RWF 13k</p>
+            <div class="flex items-center mt-2">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="ml-2 text-gray-500">(4.5/5)</span>
             </div>
-            <span class="px-4 py-1 bg-blue-100 text-blue-700 rounded-full"
-              >In Transit</span
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-2">Select Size</h3>
+            <div class="grid grid-cols-4 gap-2">
+              <button class="border rounded-md py-2 hover:border-primary-color">
+                39
+              </button>
+              <button class="border rounded-md py-2 hover:border-primary-color">
+                40
+              </button>
+              <button class="border rounded-md py-2 hover:border-primary-color">
+                41
+              </button>
+              <button class="border rounded-md py-2 hover:border-primary-color">
+                42
+              </button>
+              <button class="border rounded-md py-2 hover:border-primary-color">
+                43
+              </button>
+              <button class="border rounded-md py-2 hover:border-primary-color">
+                44
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-2">Select Color</h3>
+            <div class="flex space-x-2">
+              <button class="w-8 h-8 rounded-full bg-red-500"></button>
+              <button class="w-8 h-8 rounded-full bg-blue-500"></button>
+              <button class="w-8 h-8 rounded-full bg-black"></button>
+              <button class="w-8 h-8 rounded-full bg-white border"></button>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-2">Quantity</h3>
+            <div class="flex items-center space-x-4">
+              <button class="w-8 h-8 border rounded-md">-</button>
+              <span>1</span>
+              <button class="w-8 h-8 border rounded-md">+</button>
+            </div>
+          </div>
+
+          <div class="flex space-x-4">
+            <button
+              class="flex-1 bg-primary-color text-white py-3 rounded-md hover:bg-primary-hover"
             >
-          </div>
-
-          <div class="flex gap-4 mb-4">
-            <img
-              src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa"
-              alt="Product"
-              class="w-24 h-24 object-cover rounded"
-            />
-            <div>
-              <h4 class="font-medium">Nike Dunk</h4>
-              <p class="text-gray-500">Size: 41 | Color: Black</p>
-              <p class="text-primary-color font-bold">RWF 15k</p>
-            </div>
-          </div>
-
-          <div class="flex justify-between items-center pt-4 border-t">
-            <button class="text-primary-color hover:underline">
-              Track Order
+              Add to Cart
             </button>
             <button
-              class="px-4 py-2 border border-primary-color text-primary-color rounded hover:bg-primary-color hover:text-white"
+              class="w-12 h-12 border border-primary-color rounded-md flex items-center justify-center hover:bg-primary-color hover:text-white"
             >
-              Buy Again
+              <i class="fas fa-heart"></i>
             </button>
           </div>
-        </div>
 
-        <!-- Order Item 3 -->
-        <div class="border rounded-lg p-6 bg-white">
-          <div class="flex justify-between items-center mb-4">
-            <div>
-              <h3 class="font-semibold">Order #12347</h3>
-              <p class="text-gray-500">Placed on July 5, 2023</p>
+          <div>
+            <h3 class="font-semibold mb-2">Product Description</h3>
+            <p class="text-gray-600">
+              The Nike Air Max features a breathable mesh upper with synthetic
+              overlays for durability and support. The Max Air unit provides
+              responsive cushioning, while the rubber outsole delivers excellent
+              traction.
+            </p>
+          </div>
+
+          <div class="border-t pt-6">
+            <h3 class="font-semibold mb-4">Delivery Information</h3>
+            <div class="space-y-2">
+              <div class="flex items-center">
+                <i class="fas fa-truck w-8"></i>
+                <span>Free delivery within Kigali</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-undo w-8"></i>
+                <span>30 days return policy</span>
+              </div>
             </div>
-            <span class="px-4 py-1 bg-yellow-100 text-yellow-700 rounded-full"
-              >Processing</span
-            >
-          </div>
-
-          <div class="flex gap-4 mb-4">
-            <img
-              src="https://images.unsplash.com/photo-1605348532760-6753d2c43329"
-              alt="Product"
-              class="w-24 h-24 object-cover rounded"
-            />
-            <div>
-              <h4 class="font-medium">Air Max 90</h4>
-              <p class="text-gray-500">Size: 43 | Color: White</p>
-              <p class="text-primary-color font-bold">RWF 13k</p>
-            </div>
-          </div>
-
-          <div class="flex justify-between items-center pt-4 border-t">
-            <button class="text-primary-color hover:underline">
-              View Details
-            </button>
-            <button
-              class="px-4 py-2 border border-primary-color text-primary-color rounded hover:bg-primary-color hover:text-white"
-            >
-              Cancel Order
-            </button>
           </div>
         </div>
       </div>
